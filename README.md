@@ -13,7 +13,7 @@ This is a simple RESTful API built with Node.js, Express.js and MongoDB for mana
 # Installation
 
 1. Clone the repository
-    - git clone <repo-url>
+    - git clone (rep_url)
 2. Install dependencies
     - npm install
 3. Running the Server
