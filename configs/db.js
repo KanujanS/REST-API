@@ -1,14 +1,15 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://kanujansubakaran:Kanujan123@restapi.ip5r0j9.mongodb.net/RestAPI', {
+    const uri = process.env.MONGO_URI;
+    await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
     console.log('MongoDB connected');
-  } catch (error) {
-    console.error('MongoDB connection failed:', error.message);
+  } catch (err) {
+    console.error('MongoDB connection failed:', err.message);
     process.exit(1);
   }
 };
