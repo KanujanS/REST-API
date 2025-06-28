@@ -19,4 +19,12 @@ This is a simple RESTful API built with Node.js, Express.js and MongoDB for mana
 3. Running the Server
     - npm run server
 
+# dependencies
+
+ - body-parser: 2.2.0
+ - dotenv: 16.6.0
+ - express: 5.1.0
+ - mongoose: 8.16.1
+ - nodemon: 3.1.10
+
 
